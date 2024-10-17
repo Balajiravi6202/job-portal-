@@ -19,8 +19,8 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 
-app.use("/api", jobroute);
-app.use("/api", applyroute);
+
+app.use("/api", applyroute,jobroute);
 
 app.use(errorHandler);
 

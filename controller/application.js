@@ -83,7 +83,7 @@ export const applyForJob = (req, res) => {
       }
 
       // Create a new application
-      const application = new Application({
+      const application = await Application.create({
         jobTitle: job.title,
         companyName: job.company,
         name: req.body.name,

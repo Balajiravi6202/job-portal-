@@ -20,10 +20,7 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 
-app.use("/api", jobroute,(req, res)=>{
-  console.log("job route is working")
-  res.send("Job working.....")
-});
+app.use("/api", jobroute);
 app.use("/api", applyroute);
 
 app.use(errorHandler);

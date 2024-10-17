@@ -3,8 +3,8 @@ import dotenv from "dotenv";
 import bodyParser from "body-parser";
 import cors from "cors";
 import dbmongoose from "./config/db.config.js";
-import jobroute from "../server/routes/job.route.js";
-import applyroute from "../server/routes/apply.route.js";
+import jobroute from "./routes/job.route.js";
+import applyroute from "./routes/apply.route.js";
 import errorHandler from "./middleware/error.js";
 dotenv.config()
 
